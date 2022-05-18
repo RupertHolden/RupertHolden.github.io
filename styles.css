@@ -1,0 +1,116 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  font-family:initial;
+  background-color: rgb(67, 1, 1);
+  color: rgba(230, 2, 2, 0.568);
+  text-align: center;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+p2 {
+    font-size: 12px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+    text-align: left;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+  .sidebar {
+    float: left;
+    width: 19.1489%;
+  }
+
+  .content {
+    float: right;
+    width: 79.7872%;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+  }
+  
+  .header, .footer {
+    grid-column: 1 / -1;
+    clear: both;
+  }
+
+}
+
+.wrapper > * {
+  background-color: rgba(0, 0, 0, 0.546);
+  color: rgb(208, 201, 115);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
+#buttons li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: rgb(173, 166, 94);
+  margin-right: 30px;
+  width: 250px;
+  line-height: 50px;
+  color: whitesmoke;
+}
+
+#buttons ul {
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(90, 87, 56);
+    margin-right: 30px;
+    width: 250px;
+    line-height: 50px;
+    color: whitesmoke;
+  }
+
+ul li, ul{
+    font-size:14px;
+   }
+
+a:link { text-decoration: none;
+        color: whitesmoke;}
+a:visited { text-decoration: none;
+        color: whitesmoke }
+a:hover { text-decoration: none;
+        color: whitesmoke }
+a:active { text-decoration: none; 
+        color: whitesmoke;}
